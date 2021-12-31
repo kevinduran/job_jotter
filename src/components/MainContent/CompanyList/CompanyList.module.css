@@ -1,0 +1,79 @@
+.empty_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    padding: 15px;
+    position: relative;
+    top: -5%;
+}
+
+.list{
+    height: 95%;
+}
+.list_title{
+    text-align: center;
+    letter-spacing: 5px;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list_title h3{
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+.list_output{
+    border: 1px solid rgb(224, 22, 22);;
+    height: 95%;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    overflow: scroll;
+}
+.list_item{
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3.364em;
+}
+.list_item p{
+    padding:  0 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list_item_title{
+    display: flex;
+    flex: 3;
+    max-width: 50%;
+    max-height: none;
+    flex-wrap: wrap;
+}
+.list_item_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+
+.list_item_options button {
+    padding: 0 15px;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    color: red;
+    height: 50px;
+    width: 50px;
+    font-size: 23px;
+
+}
+.list_item_options button:hover{
+    background-color: rgba(212, 20, 20, 0.322);
+}
+

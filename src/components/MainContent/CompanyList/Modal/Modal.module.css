@@ -1,0 +1,131 @@
+.modalContainerBig{
+    display: flex;
+}
+.modalBackground{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 36, 36, 0.932);
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.modal{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(19, 18, 16);
+    height: 55%;
+    width: 69%;
+    padding: 10px;
+    z-index: 200;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.modalCloseContainer{
+    width: 90%;
+    margin: 0 auto;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2%;
+}
+.modalEdit{
+    border: none;
+    background-color: transparent;
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 10px;
+    transition: 0.3s ease all;
+}
+.modalEdit button:hover{
+    background-color: rgba(126, 18, 18, 0.466);
+    width: 80px;
+    height: 55%;
+    transition: 0.2s ease all;
+}
+
+.modalEdit button{
+    transition: 0.2s ease all;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 85px;
+    height: 65%;
+    color: red;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.modalClose{
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.modalClose:hover .line{
+    width: 20px;
+    background-color: rgba(197, 28, 28, 0.493);
+}
+.line{
+    height: 3px;
+    width: 30px;
+    margin: 3px 0;
+    background-color: red;
+    transition: 0.3s ease all;
+
+}
+.line1{
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+}
+.line2{
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.modalInfoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.modalInfo{
+    width: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.modal_edit_input{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.modal_edit_input input{
+    border: 1px solid red;
+    background-color: transparent;
+    height: 25px;
+    margin-left: 5px;
+    color: red;
+}
+.modal_edit_input input:focus{
+    outline: none;
+}

@@ -1,0 +1,113 @@
+.data{
+    height: 95%;
+}
+.data_title{
+    text-align: center;
+    letter-spacing: 5px;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data_title h3 {
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+.data_container_item:hover{
+    background-color: rgba(255, 0, 0, 0.11);
+}
+.data_container_item{
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    position:relative;
+    transition: 0.3s ease all;
+}
+.data_container_item_total{
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    position:relative;
+    transition: 0.2s ease all;
+}
+.data_item_title{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.data_item_closed{
+    height: 3.4em;
+}
+.data_item_open {
+    height: 21em; /*------this should be adjusted depending on the screen size--------*/
+    overflow: scroll;
+}
+
+
+.data_item_open_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    font-size: 0.9em; 
+    width: 100%;  
+  
+ 
+}
+.data_item_closed_info{
+    display: none;
+}
+
+.data_item_unit{
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    margin: 5px 0;
+    width: 85%;  
+
+}
+.data_item_unit:hover{
+    cursor: default;
+}
+.data_item_unit_text{
+    display: flex;
+    flex: 3;
+    max-height: none;
+    flex-wrap: wrap;
+}
+.data_item_unit_buttons{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+.data_item_unit p{
+    margin: 0;
+    padding:0;
+    font-size: 14px;
+}
+.data_item_unit button{
+   background-color:transparent;
+   color: grey;
+   transition: 0.2s ease all;
+   border-radius: 5px;
+   border: none;
+   color: red;
+   font-size: 22px;
+   padding: 5px 10px;
+   margin: 0 5px;
+}
+
+.data_item_unit button:hover{
+    background-color: rgba(212, 20, 20, 0.322);
+    cursor: pointer;
+ }
